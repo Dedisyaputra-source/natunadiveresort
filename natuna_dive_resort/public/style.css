@@ -1,0 +1,42 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@600&display=swap');
+
+.home img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    z-index: 999;
+}
+
+.navbar .container .navbar-brand img {
+    max-width: 150px;
+}
+
+.navbar .container .navbar-nav .nav-item .btn-login {
+    max-width: 124px;
+    max-height: 30px;
+    background-color: #04ADBF;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.navbar .container .navbar-nav .nav-item .nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.navbar .container .navbar-nav .nav-item .btn-login {
+    font-family: 'Playfair Display', serif;
+    ;
+}
