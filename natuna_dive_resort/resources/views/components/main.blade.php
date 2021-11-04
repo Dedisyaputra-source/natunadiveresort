@@ -7,7 +7,8 @@
                 <div class="text-hero">
                     <h1>The First Ecofrendly Resort <br><span> In Natuna Island</span></h1>
                     <small>book your privat tour across the island and explore underwater world with us</small>
-                    <button class="btn btn-primary">Book Now</button>
+                    <a href="
+                    " class="btn btn-primary">Book Now</a>
                 </div>
             </div>
         </div>
@@ -27,3 +28,83 @@
         </div>
     </div>
 </section>
+<div class="container-content">
+    <section class="package" id="package">
+        <div class="container">
+            <div class="title-package text-center">
+                <h1>Package</h1>
+                <div class="line mx-auto"></div>
+                <div class="line1 mx-auto"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 package-activity">
+                    <div class="card">
+                        <div class="price">Rp.3000.000</div>
+                        <img src="img/package2.jpg" class="card-img-top img" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Scuba and Stay</h5>
+                          <p class="card-text text-center">Dive and Stay at Natuna Dive Resort for 3 day 2 Night in a double or Twin Share Luxury room</p>
+                          <div class="btn-booking text-center">
+                              <a href="#" class="btn btn-primary">View Details <i class="fas fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 package-activity">
+                    <div class="card">
+                        <div class="price">Rp.3000.000</div>
+                        <img src="img/package3.jpg" class="card-img-top img" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Scuba and Stay</h5>
+                          <p class="card-text text-center">Dive and Stay at Natuna Dive Resort for 3 day 2 Night in a double or Twin Share Luxury room</p>
+                          <div class="btn-booking text-center">
+                              <a href="#" class="btn btn-primary">View Details <i class="fas fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 package-activity">
+                    <div class="card">
+                        <div class="price">Rp.3000.000</div>
+                        <img src="img/package1.jpg" class="card-img-top img" alt="">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Scuba and Stay</h5>
+                          <p class="card-text text-center">Dive and Stay at Natuna Dive Resort for 3 day 2 Night in a double or Twin Share Luxury room</p>
+                          <div class="btn-booking text-center">
+                              <a href="#" class="btn btn-primary">View Details <i class="fas fa-arrow-right"></i></a>
+                              
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="divesite">
+        <div class="container">
+            <div class="title-divesite text-center">
+                <h1>Dive Site</h1>
+                <div class="line"></div>
+                <div class="line1"></div>
+            </div>      
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="img/divesite1.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

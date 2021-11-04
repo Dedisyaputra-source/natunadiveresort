@@ -1,6 +1,9 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,600;1,200;1,400&display=swap');
 
+* {
+    scroll-behavior: smooth;
+}
 
 /* home */
 .home {
@@ -129,4 +132,97 @@
     width: 80%;
     min-height: 85vh;
     object-fit: cover;
+}
+
+/* content */
+.container-content {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F9FA;
+}
+
+.container-content .package {
+    margin-bottom: 20%;
+}
+
+.container-content .package .container .title-package {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.container-content .package .container .title-package .line {
+    width: 9%;
+    border: 1px solid #8D713C;
+    margin-bottom: 5px;
+}
+
+.container-content .package .container .title-package .line1 {
+    width: 7%;
+    border: 1px solid #8D713C;
+}
+
+.container-content .package .container .row .package-activity .card .img {
+    position: relative;
+    bottom: 45%;
+    left: 10%;
+    width: 80%;
+    min-height: 27vh;
+    border-radius: 10px;
+}
+
+.container-content .package .container .row .package-activity .card {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+    height: 30vh;
+    margin-top: 40%;
+    padding: 0 5px 0;
+    background-color: #04ADBF;
+}
+
+.container-content .package .container .row .package-activity .card .price {
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    z-index: 10;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.container-content .package .container .row .package-activity .card .card-body {
+    position: relative;
+    bottom: 15vh;
+}
+
+.container-content .package .container .row .package-activity .card .card-body .card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #ffff;
+}
+
+.container-content .package .container .row .package-activity .card .card-body .card-text {
+    font-family: 'Playfair Display', serif;
+    color: #ffff;
+}
+
+.container-content .package .container .row .package-activity .card .card-body .btn-booking {
+    position: relative;
+    top: -10px;
+    left: -23px;
+}
+
+.container-content .package .container .row .package-activity .card .card-body .btn-booking a {
+    width: 115%;
+    background-color: #04ADBF;
+    border: 1px solid #04ADBF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-content .divesite {
+    width: 100%;
+    min-height: 100vh;
 }
