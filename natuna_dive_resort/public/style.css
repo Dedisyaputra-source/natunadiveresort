@@ -1,5 +1,12 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+
+/* home */
+.home {
+    width: 100%;
+    height: 100vh;
+}
 
 .home img {
     width: 100%;
@@ -7,36 +14,119 @@
     object-fit: cover;
     position: absolute;
     top: 0;
+    z-index: -1;
 }
 
-.navbar {
-    z-index: 999;
+.home .background-blur {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
 }
 
-.navbar .container .navbar-brand img {
-    max-width: 150px;
-}
-
-.navbar .container .navbar-nav .nav-item .btn-login {
-    max-width: 124px;
-    max-height: 30px;
-    background-color: #04ADBF;
-    border-radius: 5px;
+.home .text-hero {
     position: relative;
-    top: 5px;
-    left: 20px;
+    top: 30px;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    flex-direction: column;
 }
 
-.navbar .container .navbar-nav .nav-item .nav-link {
+.home .text-hero h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+.home .text-hero small {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.home .text-hero .btn {
+    background-color: #04ADBF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home .text-hero .btn:hover {
+    background-color: #049BAB;
+}
+
+.navbar {
+    z-index: 82;
+    position: relative;
+    bottom: 30px;
+}
+
+.navbar .container-fluid .navbar-brand img {
+    max-width: 150px;
+}
+
+.navbar .container-fluid .navbar-nav .nav-item .nav-link {
     font-family: 'Poppins', sans-serif;
     color: white;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    transition: all .2s ease-in;
 }
 
-.navbar .container .navbar-nav .nav-item .btn-login {
+.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+    color: #04ADBF;
+    border-bottom: 1px solid;
+}
+
+.navbar .container-fluid .navbar-nav .nav-item .btn-login {
     font-family: 'Playfair Display', serif;
-    ;
+}
+
+.navbar .container-fluid .navbar-nav li {
+    margin-right: 40px;
+}
+
+/* endhome */
+/* about */
+.about {
+    width: 100%;
+    min-height: 85vh;
+}
+
+.about .container .row .about-img {
+    position: relative;
+    bottom: 200px;
+}
+
+.about .container .row .about-text {
+    text-align: start;
+    position: relative;
+    bottom: 100px;
+}
+
+.about .container .row .about-text small {
+    font-family: 'Poppins', sans-serif;
+    color: #979797;
+}
+
+.about .container .row .about-text h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.about .container .row .about-text p {
+    font-family: 'Poppins', sans-serif;
+    color: #979797;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.about .container .row .about-img img {
+    width: 80%;
+    min-height: 85vh;
+    object-fit: cover;
 }
