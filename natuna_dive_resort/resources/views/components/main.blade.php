@@ -84,21 +84,50 @@
         <div class="container">
             <div class="title-divesite text-center">
                 <h1>Dive Site</h1>
-                <div class="line"></div>
-                <div class="line1"></div>
+                <div class="line mx-auto"></div>
+                <div class="line1 mx-auto"></div>
             </div>      
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 kolomdivesite mb-5">
                     <div class="card mb-3">
-                        <div class="row g-0">
-                          <div class="col-md-4">
+                        <div class="row g-0 barisdivesite">
+                          <div class="col-md-4 img">
                             <img src="img/divesite1.jpg" class="img-fluid rounded-start" alt="...">
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 body-card">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <h5 class="card-title">Tokong Layar</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eligendi quas placeat veniam recusandae ratione voluptatem, labore inventore quasi, repudiandae ab! Cupiditate et debitis, aut eos delectus perspiciatis accusamus nesciunt veritatis quidem adipisci in quasi vel ducimus dolore, omnis exercitationem laboriosam tenetur quis! Doloribus dolores neque in pariatur maiores alias cumque, atque porro ipsam, aperiam non ullam officia rerum totam aut, consequatur similique at odio ab expedita ut accusantium explicabo minima consectetur.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-12 kolomdivesite  mb-5">
+                    <div class="card mb-3">
+                        <div class="row g-0 barisdivesite">
+                          <div class="col-md-4 img">
+                            <img src="img/divesite2.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8 body-card">
+                            <div class="card-body">
+                              <h5 class="card-title">Pulau Penjalin</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eligendi quas placeat veniam recusandae ratione voluptatem, labore inventore quasi, repudiandae ab! Cupiditate et debitis, aut eos delectus perspiciatis accusamus nesciunt veritatis quidem adipisci in quasi vel ducimus dolore, omnis exercitationem laboriosam tenetur quis! Doloribus dolores neque in pariatur maiores alias cumque, atque porro ipsam, aperiam non ullam officia rerum totam aut, consequatur similique at odio ab expedita ut accusantium explicabo minima consectetur.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-12 kolomdivesite mb-3">
+                    <div class="card mb-3">
+                        <div class="row g-0 barisdivesite">
+                          <div class="col-md-4 img">
+                            <img src="img/divesite3.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8 body-card">
+                            <div class="card-body">
+                              <h5 class="card-title">Damar Pinncial</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eligendi quas placeat veniam recusandae ratione voluptatem, labore inventore quasi, repudiandae ab! Cupiditate et debitis, aut eos delectus perspiciatis accusamus nesciunt veritatis quidem adipisci in quasi vel ducimus dolore, omnis exercitationem laboriosam tenetur quis! Doloribus dolores neque in pariatur maiores alias cumque, atque porro ipsam, aperiam non ullam officia rerum totam aut, consequatur similique at odio ab expedita ut accusantium explicabo minima consectetur.</p>
                             </div>
                           </div>
                         </div>
@@ -108,3 +137,15 @@
         </div>
     </section>
 </div>
+<section class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-title"><h5>lofi</h5></div>
+                    <div class="card-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

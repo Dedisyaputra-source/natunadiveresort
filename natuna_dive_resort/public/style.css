@@ -142,7 +142,7 @@
 }
 
 .container-content .package {
-    margin-bottom: 20%;
+    margin-bottom: 18%;
 }
 
 .container-content .package .container .title-package {
@@ -151,6 +151,7 @@
     top: 30px;
     margin-bottom: 30px;
     width: 100%;
+    letter-spacing: 1px;
 }
 
 .container-content .package .container .title-package .line {
@@ -223,6 +224,89 @@
 }
 
 .container-content .divesite {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container-content .divesite .container .title-divesite {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    top: 30px;
+    padding-bottom: 9vh;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.container-content .divesite .container .row .kolomdivesite {
+    margin: 40px 0;
+}
+
+.container-content .divesite .container .title-divesite .line {
+    width: 9%;
+    border: 1px solid #8D713C;
+    margin-bottom: 5px;
+}
+
+.container-content .divesite .container .title-divesite .line1 {
+    width: 7%;
+    border: 1px solid #8D713C;
+}
+
+.container-content .divesite .container .row .kolomdivesite .card .barisdivesite .img {
+    position: absolute;
+    top: -15px;
+    left: -10px;
+}
+
+.container-content .divesite .container .row .kolomdivesite .card {
+    background-color: #E5E5E5;
+}
+
+.container-content .divesite .container .row .kolomdivesite .card .barisdivesite .img img {
+    min-height: 40vh;
+    border-radius: 15px !important;
+    object-fit: cover;
+}
+
+.container-content .divesite .container .row .kolomdivesite .card .barisdivesite .body-card {
+    position: relative;
+    left: 33%;
+    max-height: 31vh;
+    min-height: 31vh;
+    overflow-y: auto;
+}
+
+.container-content .divesite .container .row .kolomdivesite .card .barisdivesite .body-card .card-body .card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #04ADBF;
+    text-shadow: 0 0 rgba(0, 0, 0, .6);
+}
+
+.container-content .divesite .container .row .kolomdivesite .card .barisdivesite .body-card .card-body .card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.923rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.container-content .divesite .container .row .kolomdivesite .card .barisdivesite .body-card::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #ffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #049BAB;
+    border-radius: 10px;
+}
+
+/* contact */
+.contact {
+    margin-top: 17%;
     width: 100%;
     min-height: 100vh;
 }
