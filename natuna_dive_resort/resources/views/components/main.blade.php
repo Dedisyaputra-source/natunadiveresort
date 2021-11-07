@@ -147,12 +147,12 @@
                       <div class="card-body">
                         <p class="card-title">Contact Us</p>
                         <p class="card-text"><i class="fas fa-map-marker-alt"></i> JL.Raya Sepempang, Sepempang, Bunguran Timur, Ranai, Riau, Indonesia, 29783</p>
-                        <p class="card-text">natunadiveresort@gmail.com</p>
-                        <p class="card-text">082172712727</p>
-                        <a href="#" class="card-link">ig</a>
-                        <a href="#" class="card-link">fb</a>
-                        <a href="#" class="card-link">twitter</a>
-                        <a href="#" class="card-link">whatsapp</a>
+                        <p class="card-text"><i class="fas fa-envelope"></i> natunadiveresort@gmail.com</p>
+                        <p class="card-text"><i class="fas fa-mobile-alt"></i> 082172712727</p>
+                        <a href="#" class="card-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="card-link"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="card-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="card-link"><i class="fab fa-whatsapp"></i></a>
                       </div>
                     </div>
                   </div>
@@ -184,3 +184,22 @@
         </div>
     </div>
 </section>
+  <footer>
+    <div class="logo-footer text-center">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="text-footer ">
+      <ul>
+        <li>Terms Of Sevice</li>
+        <li>Privacy Police</li>
+        <li>Security</li>
+        <li>Sitemap</li>
+      </ul>
+    </div>
+    <div class="footer-end ">
+      <ul class="">
+        <li>English <i class="fas fa-sort-down"></i></li>
+        <li>&copyNatunaDiveResort.All Rights Reserved</li>
+      </ul>
+    </div>
+  </footer>
