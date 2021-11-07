@@ -7,8 +7,7 @@
                 <div class="text-hero">
                     <h1>The First Ecofrendly Resort <br><span> In Natuna Island</span></h1>
                     <small>book your privat tour across the island and explore underwater world with us</small>
-                    <a href="
-                    " class="btn btn-primary">Book Now</a>
+                    <a href="#package" class="btn btn-primary">Book Now</a>
                 </div>
             </div>
         </div>
@@ -80,7 +79,7 @@
             </div>
         </div>
     </section>
-    <section class="divesite">
+    <section class="divesite" id="divesite">
         <div class="container">
             <div class="title-divesite text-center">
                 <h1>Dive Site</h1>
@@ -137,14 +136,50 @@
         </div>
     </section>
 </div>
-<section class="contact">
+<section class="contact" id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-title"><h5>lofi</h5></div>
-                    <div class="card-body"></div>
+            <div class="col-md-9 col-contact mx-auto">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4 col-card-contact">
+                    <div class="card">
+                      <div class="card-body">
+                        <p class="card-title">Contact Us</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> JL.Raya Sepempang, Sepempang, Bunguran Timur, Ranai, Riau, Indonesia, 29783</p>
+                        <p class="card-text">natunadiveresort@gmail.com</p>
+                        <p class="card-text">082172712727</p>
+                        <a href="#" class="card-link">ig</a>
+                        <a href="#" class="card-link">fb</a>
+                        <a href="#" class="card-link">twitter</a>
+                        <a href="#" class="card-link">whatsapp</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-card">
+                    <div class="card-body card-form">
+                      <p class="card-title">Get In Touch</p>
+                      <div class="card-text-small mb-3">
+                        <small class="card-text">feel free to drop us a line below</small>
+                      </div>
+                      <form action="">
+                        <div class="mb-3">
+                          <input type="text" name="nama" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                          <input type="email" name="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                          <textarea name="message" id="message" cols="20" rows="5" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <a href="#" class="btn btn-primary btn-message">Send</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
         </div>
     </div>

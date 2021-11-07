@@ -10,13 +10,13 @@
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Package</a>
+            <a class="nav-link" href="#package">Package</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dive</a>
+            <a class="nav-link" href="#divesite">Dive Site</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Rooms</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
