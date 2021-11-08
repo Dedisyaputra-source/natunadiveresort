@@ -31,13 +31,13 @@
     <section class="package" id="package">
         <div class="container">
             <div class="title-package text-center">
-                <h1>Package</h1>
+                <h1 class="pb-2">Package</h1>
                 <div class="line mx-auto"></div>
                 <div class="line1 mx-auto"></div>
             </div>
             <div class="row">
                 <div class="col-md-4 package-activity">
-                    <div class="card">
+                    <div class="card mb-5">
                         <div class="price">Rp.3000.000</div>
                         <img src="img/package2.jpg" class="card-img-top img" alt="">
                         <div class="card-body">
@@ -50,20 +50,20 @@
                       </div>
                 </div>
                 <div class="col-md-4 package-activity">
-                    <div class="card">
+                    <div class="card mb-5">
                         <div class="price">Rp.3000.000</div>
                         <img src="img/package3.jpg" class="card-img-top img" alt="">
                         <div class="card-body">
                           <h5 class="card-title text-center">Scuba and Stay</h5>
                           <p class="card-text text-center">Dive and Stay at Natuna Dive Resort for 3 day 2 Night in a double or Twin Share Luxury room</p>
                           <div class="btn-booking text-center">
-                              <a href="#" class="btn btn-primary">View Details <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn btn-primary">View Details <i class="fas fa-arrow-right"></i></a>
                           </div>
                         </div>
                       </div>
                 </div>
                 <div class="col-md-4 package-activity">
-                    <div class="card">
+                    <div class="card mb-5">
                         <div class="price">Rp.3000.000</div>
                         <img src="img/package1.jpg" class="card-img-top img" alt="">
                         <div class="card-body">
@@ -136,7 +136,7 @@
         </div>
     </section>
 </div>
-<section class="contact" id="contact">
+<section class="contact my-5" id="contact" >
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-contact mx-auto">
@@ -197,7 +197,7 @@
       </ul>
     </div>
     <div class="footer-end ">
-      <ul class="">
+      <ul>
         <li>English <i class="fas fa-sort-down"></i></li>
         <li>&copyNatunaDiveResort.All Rights Reserved</li>
       </ul>

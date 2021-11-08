@@ -63,6 +63,8 @@
     background-color: #049BAB;
 }
 
+/* navbar */
+
 .navbar {
     z-index: 82;
     position: relative;
@@ -81,9 +83,18 @@
     transition: all .2s ease-in;
 }
 
-.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+.navbar .container-fluid .navbar-nav .nav-item .nav-link .border-nav {
+    width: 50%;
     color: #04ADBF;
     border-bottom: 1px solid;
+    transform: translateX(-100%);
+    transition: all .2 ease-in;
+}
+
+.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover .border-nav {
+    color: #04ADBF;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .navbar .container-fluid .navbar-nav .nav-item .btn-login {
@@ -149,6 +160,7 @@
 .container-content .package .container .title-package {
     font-family: 'Playfair Display', serif;
     position: relative;
+    font-size: 3rem;
     top: 30px;
     margin-bottom: 30px;
     width: 100%;
@@ -211,14 +223,8 @@
     color: #ffff;
 }
 
-.container-content .package .container .row .package-activity .card .card-body .btn-booking {
-    position: relative;
-    top: -10px;
-    left: -23px;
-}
-
 .container-content .package .container .row .package-activity .card .card-body .btn-booking a {
-    width: 115%;
+    width: 80%;
     background-color: #04ADBF;
     border: 1px solid #04ADBF;
     font-family: 'Poppins', sans-serif;
@@ -240,8 +246,6 @@
 
 .container-content .divesite .container .row .kolomdivesite {
     margin: 40px 0;
-    /* position: relative;
-    bottom: 30px; */
 }
 
 .container-content .divesite .container .title-divesite .line {
@@ -319,7 +323,6 @@
     min-height: 65vh;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, .2);
     border: none;
-
 }
 
 .contact .container .row .col-contact .card .row .col-card .card-form {
@@ -482,4 +485,155 @@ footer .footer-end ul li {
     color: white;
     font-family: 'Poppins', sans-serif;
     opacity: .9;
+}
+
+/* device smartphone */
+@media screen and (min-width:300px) and (max-width:500px) {
+    .navbar .container-fluid .navbar-brand img {
+        max-width: 100px;
+        padding-top: 50px;
+    }
+
+    /* .navbar {
+    padding: 10px 20px;
+} */
+    .about .container .row .about-img img {
+        width: 100%;
+        min-height: 50vh;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .about .container .row .about-img {
+        position: relative;
+        bottom: 140px;
+    }
+
+    .about {
+        width: 100%;
+        min-height: 85vh;
+    }
+
+    .home .text-hero {
+        position: relative;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navbar {
+        z-index: 82;
+        position: relative;
+        bottom: 0;
+        background-color: #049BAB !important;
+    }
+
+    .container-content .package .container .title-package h1 {
+        font-family: 'Playfair Display', serif;
+        position: relative;
+        font-size: 2.5rem;
+        top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+
+    .container-content .package .container .row .package-activity .card .card-body .btn-booking {
+        padding-top: 0.5rem;
+    }
+
+    .container-content .package .container .title-package .line {
+        width: 30%;
+        border: 1px solid #8D713C;
+        margin-bottom: 5px;
+    }
+
+    .container-content .package .container .title-package .line1 {
+        width: 20%;
+        border: 1px solid #8D713C;
+    }
+
+    .container-content .divesite .container .title-divesite h1 {
+        font-family: 'Playfair Display', serif;
+        position: relative;
+        top: 30px;
+        padding-bottom: 4vh;
+        width: 100%;
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+    }
+
+    .container-content .divesite .container .title-divesite .line {
+        width: 30%;
+        border: 1px solid #8D713C;
+        margin-bottom: 5px;
+    }
+
+    .container-content .divesite .container .title-divesite .line1 {
+        width: 20%;
+        border: 1px solid #8D713C;
+    }
+
+    .container-content .divesite .container .row .kolomdivesite .card .barisdivesite .img {
+        position: static;
+    }
+
+    .container-content .divesite .container .row .kolomdivesite .card .barisdivesite .body-card {
+        position: static;
+        max-height: 31vh;
+        min-height: 31vh;
+        overflow-y: auto;
+
+    }
+
+    .container-content .divesite .container .row .kolomdivesite .card {
+        background-color: #ffff;
+        border-radius: 15px;
+        padding-bottom: 1rem;
+    }
+
+    .contact .container .row .col-contact .card .row .col-card-contact .card {
+        background-color: #04ADBF;
+        position: static;
+        min-height: 90%;
+        width: 100%;
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, .2);
+        padding-bottom: 1rem;
+    }
+
+    .contact .container .row .col-contact .card .row .col-card .card-form {
+        position: static;
+        line-height: 1rem;
+        margin-top: 1rem;
+    }
+
+    .contact .container .row .col-contact .card .row .col-card .card-form form input {
+        width: 100%;
+        border: none;
+        background-color: #C4C4C4;
+        opacity: .25;
+        border-radius: 11px;
+        min-height: 2em;
+        transition: all 0.1s ease-in;
+    }
+
+    .contact .container .row .col-contact .card .row .col-card .card-form form textarea {
+        width: 100%;
+        border-radius: 11px;
+        background-color: #C4C4C4;
+        opacity: .25;
+        transition: all 0.1s ease-in;
+    }
+
+    .contact .container .row .col-contact .card .row .col-card .card-form form .btn-message {
+        width: 20%;
+        border-radius: 6px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9rem;
+        background-color: #04ADBF;
+        border: none;
+    }
 }
