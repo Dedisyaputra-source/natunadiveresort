@@ -18,22 +18,26 @@ Route::middleware('auth')->group(function () {
     Route::post('/package/create', [PackageController::class, 'store']);
     Route::get('/show/{package:slug}', [PackageController::class, 'show']);
     Route::delete('/package/delete/{package:slug}', [PackageController::class, 'destroy']);
-    Route::get('/package/{package:slug}', [PackageController::class, 'edit']);
+    Route::get('/edit/{package:slug}', [PackageController::class, 'edit']);
     Route::put('/package/edit/{package:slug}', [PackageController::class, 'update']);
 });
 
 
 Route::get('/dashboard/room', [RoomController::class, 'index']);
-
+Route::middleware('auth')->group(function () {
+    Route::get('/room/create', [RoomController::class, 'create']);
+    Route::post('/room/create', [RoomController::class, 'store']);
+    Route::get('/room/{room:slug}', [RoomController::class, 'show']);
+    Route::delete('/room/delete/{room:slug}', [RoomController::class, 'destroy']);
+    Route::get('/edit/{room:slug}', [RoomController::class, 'edit']);
+    Route::put('/update/{room:slug}', [RoomController::class, 'update']);
+});
 
 Route::get('/dashboard/message', function () {
     return view('admin.message.index', [
         'title' => 'Message'
     ]);
 });
-
-
-// halaman single package
 
 // Route login
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

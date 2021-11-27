@@ -17,7 +17,7 @@ class CreatePackagesTable extends Migration
             $table->id('id_package');
             $table->text('gambar_paket')->nullable();
             $table->text('nama_paket');
-            $table->string('slug')->unique();
+            $table->string('slug');
             $table->text('fasilitas_paket');
             $table->text('iternary');
             $table->integer('harga_paket');

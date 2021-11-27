@@ -45,7 +45,7 @@
                     <tr align="center">
                         <td>{{ $no++ }}</td>
                         <td>{{ $rooms->nama_kamar}}</td>
-                        <td>Rp. {{ $rooms->fasilitas_kamar}}</td>
+                        <td>@currency($rooms->harga_kamar)</td>
                     </tr>                        
                     @empty
                       <tr align="center">

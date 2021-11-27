@@ -28,7 +28,7 @@
             <tr align="center">
                 <td>{{ $no++ }}</td>
                 <td>{{ $packages->nama_paket}}</td>
-                <td>Rp. {{ $packages->harga_paket}}</td>
+                <td>@currency($packages->harga_paket)</td>
                 <td>
                     <a href="/show/{{ $packages->slug }}" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> Detail</a> 
                     <form action="/package/delete/{{ $packages->slug}}" method="post" class="d-inline">
