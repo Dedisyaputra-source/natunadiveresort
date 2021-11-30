@@ -30,7 +30,7 @@
                 <td>{{ $packages->nama_paket}}</td>
                 <td>@currency($packages->harga_paket)</td>
                 <td>
-                    <a href="/show/{{ $packages->slug }}" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> Detail</a> 
+                    <a href="/package/show/{{ $packages->slug }}" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> Detail</a> 
                     <form action="/package/delete/{{ $packages->slug}}" method="post" class="d-inline">
                         @method('delete')
                         @csrf
@@ -38,7 +38,7 @@
                             <span><i class="fas fa-trash-alt"></i> Hapus</span>
                         </button>
                     </form> 
-                    <a href="/package/{{ $packages->slug }}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a> 
+                    <a href="/package/edit/{{ $packages->slug }}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a> 
                 </td>
             </tr>
             @endforeach

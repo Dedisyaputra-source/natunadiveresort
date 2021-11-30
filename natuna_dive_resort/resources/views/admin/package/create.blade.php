@@ -39,7 +39,7 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="harga_paket" class="form-label">Harga Paket</label>
-                  <input type="number" class="form-control @error('nama_paket') is-invalid @enderror" id="harga_paket" name="harga_paket"  value="{{ old('harga_paket') }}">
+                  <input type="number" class="form-control @error('harga_paket') is-invalid @enderror" id="harga_paket" name="harga_paket"  value="{{ old('harga_paket') }}">
                 @error('harga_paket')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -53,14 +53,6 @@
                   @enderror
                   <input id="fasilitas_paket" type="hidden" name="fasilitas_paket" value="{{old('fasilitas_paket')}}">
                   <trix-editor input="fasilitas_paket"></trix-editor>
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="iternary" class="form-label">Agenda Perjalanan</label>
-                  @error('iternary')
-                    <p class="text-danger">{{ $message }}</p>                      
-                  @enderror
-                  <input id="iternary" type="hidden" name="iternary" value="{{ old('iternary') }}">
-                  <trix-editor input="iternary"></trix-editor>
                 </div>
               <button type="submit" class="btn btn-primary">Tambah Data</button>
             </form>        

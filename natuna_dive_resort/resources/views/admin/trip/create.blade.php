@@ -2,25 +2,25 @@
 @section('content')
 <div class="row">
   <div class="col-md-12">
-    <h3 class="text-center">Tambah Data Kamar</h3>
+    <h3>Tambah Data Trip</h3>
 </div>
 </div>
     <div class="row">
-      <div class="col-md-8 mb-5 mx-auto">
+      <div class="col-md-8 mb-5">
         <div class="card">
           <div class="card-body mb-2">
-            <form action="/room/create" method="post" enctype="multipart/form-data">
+            <form action="/trip/create" method="post" enctype="multipart/form-data">
               @csrf
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="gambar_kamar">Gambar Kamar</label>
+                  <label for="trip_image">Gambar Trip</label>
                   <div class="row">
                     <div class="col-md-5">
                       <img class="img-preview img-fluid d-inline mb-3">
                     </div>
                   </div>
-                  <input class="form-control @error('gambar_kamar') is-invalid @enderror" type="file" id="gambar_kamar" name="gambar_kamar" onchange="previewImage()">
-                  @error('gambar_kamar')
+                  <input class="form-control @error('trip_image') is-invalid @enderror" type="file" id="trip_image" name="trip_image" onchange="previewImage()">
+                  @error('trip_image')
                   <div class="invalid-feedback">
                       {{ $message }}
                   </div>
@@ -29,36 +29,30 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="nama_kamar" class="form-label">Tipe Kamar</label>
-                  {{-- <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select> --}}
-                  <input type="text" class="form-control @error('nama_kamar') is-invalid @enderror" id="nama_kamar" name="nama_kamar"  autofocus  value="{{ old('nama_kamar') }}">
-                  @error('nama_kamar')
+                  <label for="trip_name" class="form-label">Nama Trip</label>
+                  <input type="text" class="form-control @error('trip_name') is-invalid @enderror" id="trip_name" name="trip_name"  autofocus  value="{{ old('trip_name') }}">
+                  @error('trip_name')
                   <div class="invalid-feedback">
                       {{ $message }}
                   </div>
                   @enderror
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="harga_kamar" class="form-label">Harga Kamar</label>
-                  <input type="number" class="form-control @error('harga_kamar') is-invalid @enderror" id="harga_kamar" name="harga_kamar"  value="{{ old('harga_kamar') }}">
-                @error('harga_kamar')
+                  <label for="trip_price" class="form-label">Harga Paket</label>
+                  <input type="number" class="form-control @error('trip_price') is-invalid @enderror" id="trip_price" name="trip_price"  value="{{ old('trip_price') }}">
+                @error('trip_price')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>
                 @enderror
                 </div>
                 <div class="form-group col-md-12">
-                  <label for="fasilitas_kamar" class="form-label">Fasilitas Kamar</label>
-                  @error('fasilitas_kamar')
+                  <label for="trip_description" class="form-label">Deskripsi Trip</label>
+                  @error('trip_description')
                     <p class="text-danger">{{ $message }}</p>                      
                   @enderror
-                  <input id="fasilitas_kamar" type="hidden" name="fasilitas_kamar" value="{{old('fasilitas_kamar')}}">
-                  <trix-editor input="fasilitas_kamar"></trix-editor>
+                  <input id="trip_description" type="hidden" name="trip_description" value="{{old('trip_description')}}">
+                  <trix-editor input="trip_description"></trix-editor>
                 </div>
               <button type="submit" class="btn btn-primary">Tambah Data</button>
             </form>        
@@ -68,7 +62,7 @@
     </div> 
         <script>
           function previewImage(){
-            const gambar = document.querySelector('#gambar_kamar');
+            const gambar = document.querySelector('#trip_image');
             const previewImage = document.querySelector('.img-preview');
 
             previewImage.style.display = 'block';

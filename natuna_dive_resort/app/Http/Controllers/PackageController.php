@@ -34,10 +34,9 @@ class PackageController extends Controller
     {
         $validatedData = $request->validate([
             'gambar_paket' => 'image|file|max:1024',
-            'nama_paket' => 'required',
+            'nama_paket' => 'required|unique:packages',
             'fasilitas_paket' => 'required',
             'harga_paket' => 'required',
-            'iternary' => 'required'
         ]);
         if ($request->file('gambar_paket')) {
             $validatedData['gambar_paket'] = $request->file('gambar_paket')->store('package-images');
@@ -71,7 +70,6 @@ class PackageController extends Controller
             'nama_paket' => 'required',
             'fasilitas_paket' => 'required',
             'harga_paket' => 'required',
-            'iternary' => 'required'
         ]);
         if ($request->file('gambar_paket')) {
             if ($request->gambarLama) {

@@ -37,6 +37,14 @@
             <i class="fas fa-bed"></i>
             <span>Room</span></a>
     </li>
+
+    <!-- Nav Item - Rooms-->
+    <li class="nav-item {{ ($title === 'Trip') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/trip">
+            <i class="fas fa-hiking"></i>
+            <span>Trip</span></a>
+    </li>
+
     <!-- Nav Item - Commentar -->
     <li class="nav-item {{ ($title === 'Message') ? 'active' : '' }}">
         <a class="nav-link" href="/dashboard/message">

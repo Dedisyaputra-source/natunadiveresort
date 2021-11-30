@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col-md-7 mb-2">
     <a href="/dashboard/package" class="btn btn-sm  btn-warning"><i class="fas fa-arrow-left"></i> Kembali</a>
-    <a href="/edit/{{ $package->slug }}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a>
+    <a href="/package/edit/{{ $package->slug }}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a>
     <form action="/package/delete/{{ $package->slug}}" method="post" class="d-inline">
       @method('delete')
       @csrf

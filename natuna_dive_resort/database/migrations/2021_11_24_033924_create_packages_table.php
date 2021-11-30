@@ -19,7 +19,6 @@ class CreatePackagesTable extends Migration
             $table->text('nama_paket');
             $table->string('slug');
             $table->text('fasilitas_paket');
-            $table->text('iternary');
             $table->integer('harga_paket');
             $table->timestamp('publish_at')->nullable();
             $table->timestamps();

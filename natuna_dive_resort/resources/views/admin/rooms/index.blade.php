@@ -30,7 +30,7 @@
                 <td>{{ $room->nama_kamar}}</td>
                 <td>@currency($room->harga_kamar)</td>
                 <td>
-                    <a href="/room/{{ $room->slug }}" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> Detail</a> 
+                    <a href="/room/show/{{ $room->slug }}" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> Detail</a> 
                     <form action="/room/delete/{{ $room->slug}}" method="post" class="d-inline">
                         @method('delete')
                         @csrf
@@ -38,7 +38,7 @@
                             <span><i class="fas fa-trash-alt"></i> Hapus</span>
                         </button>
                     </form> 
-                    <a href="/edit/{{ $room->slug }}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a> 
+                    <a href="/room/edit/{{ $room->slug }}" class="btn btn-success btn-sm"><i class="fas fa-edit"></i> Edit</a> 
                 </td>
             </tr>
             @empty

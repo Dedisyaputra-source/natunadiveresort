@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 use App\Models\Package;
+use App\Models\Trip;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -13,7 +14,8 @@ class DashboardController extends Controller
         return view('admin.index', [
             'title' => 'Dashboard',
             'package' => Package::latest()->get(),
-            'room' => room::latest()->get()
+            'room' => Room::latest()->get(),
+            'trip' => Trip::latest()->get()
         ]);
     }
 }

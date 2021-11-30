@@ -9,7 +9,7 @@
   <div class="col-md-8 mb-5">
     <div class="card">
       <div class="card-body mb-2">
-        <form action="/update/{{ $room->slug }}" method="post" enctype="multipart/form-data">
+        <form action="/room/update/{{ $room->slug }}" method="post" enctype="multipart/form-data">
           @csrf
           @method('put')
           <div class="form-row">
