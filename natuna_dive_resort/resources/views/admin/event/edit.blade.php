@@ -9,22 +9,22 @@
   <div class="col-md-8 mb-5">
     <div class="card">
       <div class="card-body mb-2">
-        <form action="/trip/update/{{ $trip->slug }}" method="post" enctype="multipart/form-data">
+        <form action="/event/update/{{ $event->slug }}" method="post" enctype="multipart/form-data">
           @csrf
           @method('put')
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="trip_image" class="form-label d-block">Gambar Trip</label>
-              <input type="hidden" name="gambarLama" value="{{ $trip->trip_image }}">
-              @if ($trip->trip_image)
+              <label for="event_image" class="form-label d-block">Gambar Event</label>
+              <input type="hidden" name="gambarLama" value="{{ $event->event_image }}">
+              @if ($event->event_image)
               <div class="row">
                 <div class="col-md-7">
-                  <img src="{{ asset('storage/' . $trip->trip_image) }}" class="img-preview img-fluid mb-3 d-block">
+                  <img src="{{ asset('storage/' . $event->event_image) }}" class="img-preview img-fluid mb-3 d-block">
                 </div>                              
               </div>
               @endif
-              <input class="form-control @error('trip_image') is-invalid @enderror" type="file" id="trip_image" name="trip_image" onchange="previewImage()">
-              @error('trip_image')
+              <input class="form-control @error('event_image') is-invalid @enderror" type="file" id="event_image" name="event_image" onchange="previewImage()">
+              @error('event_image')
               <div class="invalid-feedback">
                   {{ $message }}
               </div>
@@ -32,30 +32,30 @@
           </div>
           <div class="form-row">      
             <div class="form-group col-md-6">
-              <label for="trip_name" class="form-label">Nama Trip</label>
-                  <input type="text" class="form-control @error('trip_name') is-invalid @enderror" id="trip_name" name="trip_name"  autofocus  value="{{ old('trip_name', $trip->trip_name) }}">
-                    @error('trip_name')
+              <label for="event_name" class="form-label">Nama Event</label>
+                  <input type="text" class="form-control @error('event_name') is-invalid @enderror" id="event_name" name="event_name"  autofocus  value="{{ old('event_name', $event->event_name) }}">
+                    @error('event_name')
                     <div class="invalid-feedback">
                       {{ $message }}
                   </div>
                 @enderror
             </div>
             <div class="form-group col-md-6">
-              <label for="trip_price" class="form-label">Harga Kamar</label>
-              <input type="number" class="form-control @error('trip_price') is-invalid @enderror" id="trip_price" name="trip_price"  value="{{ old('trip_price', $trip->trip_price) }}">
-            @error('trip_price')
+              <label for="event_price" class="form-label">Harga Event</label>
+              <input type="number" class="form-control @error('event_price') is-invalid @enderror" id="event_price" name="event_price"  value="{{ old('event_price', $event->event_price) }}">
+            @error('event_price')
                 <div class="invalid-feedback">
                     {{ $message }}
                 </div>
             @enderror
             </div>
             <div class="form-group col-md-12">
-              <label for="trip_description" class="form-label">Deskripsi Trip</label>
-              @error('trip_description')
+              <label for="event_description" class="form-label">Deskripsi Event</label>
+              @error('event_description')
                 <p class="text-danger">{{ $message }}</p>                      
               @enderror
-              <input id="trip_description" type="hidden" name="trip_description" value="{{old('trip_description', $trip->trip_description)}}">
-              <trix-editor input="trip_description" class="trix-content"></trix-editor>
+              <input id="event_description" type="hidden" name="event_description" value="{{old('event_description', $event->event_description)}}">
+              <trix-editor input="event_description" class="trix-content"></trix-editor>
             </div>
           </div>
           <button type="submit" class="btn btn-primary">Update Data</button>
@@ -66,7 +66,7 @@
 </div>
         <script>
           function previewImage(){
-            const gambar = document.querySelector('#trip_image');
+            const gambar = document.querySelector('#event_image');
             const previewImage = document.querySelector('.img-preview');
 
             previewImage.style.display = 'block';

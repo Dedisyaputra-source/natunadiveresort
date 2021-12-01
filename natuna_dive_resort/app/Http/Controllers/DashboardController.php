@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Event;
 use App\Models\Room;
 use App\Models\Package;
 use App\Models\Trip;
@@ -15,7 +16,8 @@ class DashboardController extends Controller
             'title' => 'Dashboard',
             'package' => Package::latest()->get(),
             'room' => Room::latest()->get(),
-            'trip' => Trip::latest()->get()
+            'trip' => Trip::latest()->get(),
+            'event' => Event::latest()->get()
         ]);
     }
 }

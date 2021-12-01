@@ -8,6 +8,7 @@ use App\Http\Controllers\MessageController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ResortController;
 use App\Http\Controllers\TripController;
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 
 // route dashboard
@@ -38,13 +39,21 @@ Route::middleware('auth')->group(function () {
     Route::get('/trip/create', [TripController::class, 'create']);
     Route::post('/trip/create', [TripController::class, 'store']);
     Route::get('/trip/show/{trip:slug}', [TripController::class, 'show']);
-    Route::get('trip/{trip:slug}/edit', [TripController::class, 'edit']);
-    Route::put('trip/update/{trip:slug}', [TripController::class, 'update']);
+    Route::get('/trip/{trip:slug}/edit', [TripController::class, 'edit']);
+    Route::put('/trip/update/{trip:slug}', [TripController::class, 'update']);
     Route::delete('/trip/delete/{trip:slug}', [TripController::class, 'destroy']);
     // route Message
     Route::get('/dashboard/message', [MessageController::class, 'index']);
     Route::post('/message/create', [MessageController::class, 'store']);
     Route::delete('/message/delete/{message:slug}', [MessageController::class, 'destroy']);
+    // route Event
+    Route::get('/dashboard/event', [EventController::class, 'index']);
+    Route::get('/event/create', [EventController::class, 'create']);
+    Route::post('/event/create', [EventController::class, 'store']);
+    Route::get('/event/show/{event:slug}', [EventController::class, 'show']);
+    Route::get('/event/{event:slug}/edit', [EventController::class, 'edit']);
+    Route::put('/event/update/{event:slug}', [eventController::class, 'update']);
+    Route::delete('/event/delete/{event:slug}', [EventController::class, 'destroy']);
 });
 
 

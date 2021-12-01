@@ -44,6 +44,12 @@
             <i class="fas fa-hiking"></i>
             <span>Trip</span></a>
     </li>
+    <!-- Nav Item - Rooms-->
+    <li class="nav-item {{ ($title === 'Event') ? 'active' : '' }}">
+        <a class="nav-link" href="/dashboard/event">
+            <i class="fab fa-accusoft"></i>
+            <span>Event</span></a>
+    </li>
 
     <!-- Nav Item - Commentar -->
     <li class="nav-item {{ ($title === 'Message') ? 'active' : '' }}">

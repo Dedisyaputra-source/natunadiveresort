@@ -1,14 +1,14 @@
 @extends('layouts.main')
 @section('content')
     <div class="row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-6">
             <h2> List Data Paket</h2>
         </div>
-        <div class="col-md-6 mb-3">
+        <div class="col-md-6">
             <h2> List Data Kamar</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-3">
         <div class="col-md-6">
             <table class="table table-bordered">
                 <thead>
@@ -61,8 +61,11 @@
         </div>
     </div> 
     <div class="row">
-        <div class="col-md-6 mb-3">
+        <div class="col-md-6 ">
             <h2> List Data Trip</h2>
+        </div>
+        <div class="col-md-6 ">
+            <h2> List Data Event</h2>
         </div>
     </div>
     <div class="row">
@@ -82,6 +85,31 @@
                         <td>{{ $no++ }}</td>
                         <td>{{ $trips->trip_name}}</td>
                         <td>@currency($trips->trip_price)</td>
+                    </tr>
+                    @empty
+                    <tr align="center">
+                        <td colspan="3">Data Belum Tersedia</td>
+                      </tr>        
+                    @endforelse
+                </tbody>
+              </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                    <tr align="center">
+                        <th scope="row">No</th>
+                        <th scope="col">Nama Event</th>
+                        <th scope="col">Harga Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @php $no =1 ; @endphp
+                    @forelse ($event as $events )
+                    <tr align="center">
+                        <td>{{ $no++ }}</td>
+                        <td>{{ $events->event_name}}</td>
+                        <td>@currency($events->event_price)</td>
                     </tr>
                     @empty
                     <tr align="center">
